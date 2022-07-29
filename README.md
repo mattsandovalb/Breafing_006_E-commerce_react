@@ -82,4 +82,4 @@ Lista de tecnologias utilizadas en este proyecto:
 * [Figma](https://www.figma.com/file/8x920LtMZEWFdegu805zuS/Mercado?node-id=0%3A1)
 * [Trello](https://trello.com/b/ZR0ibXJL/e-commerce-react)
 
-## Capturas de Pantallas
+
