@@ -32,7 +32,7 @@ function Navbar({ search }) {
         </div>
         <form className="d-flex" role="search" onSubmit={onFormSubmit}>
           <input
-            class="form-control"
+            className="form-control"
             type="search"
             placeholder="Buscar productos"
             aria-label="Search"

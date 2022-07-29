@@ -10,7 +10,7 @@ function Header() {
        <div className='container-text'>
           <p className='slogan'>Productos Frescos y Orgánicos para ti </p>
           <p className='claim'>Todo lo que necesitas en un sólo click</p>
-          <button type="button" class="text-uppercase btn-shop btn-primary">comprar</button>
+          <button type="button" className="text-uppercase btn-shop btn-primary">comprar</button>
        </div>
     </div>   
   )

@@ -16,16 +16,16 @@ function Formolario() {
             </div>
 
             <label for="nombre" className="form-label">Nombres:</label>
-            <input type="text" id="nombre" class="form-input" placeholder="Escriba su nombre" />
+            <input type="text" id="nombre" className="form-input" placeholder="Escriba su nombre" />
 
             <label for="Direccion" className="form-label">Dirección:</label>
-            <input type="text" id="Direccion" class="form-input" placeholder="Escriba su direccion" />
+            <input type="text" id="Direccion" className="form-input" placeholder="Escriba su direccion" />
 
             <label for="Correo" className="form-label">Correo Electronico:</label>
-            <input type="text" id="Correo" class="form-input" placeholder="Escriba su correo" />
+            <input type="text" id="Correo" className="form-input" placeholder="Escriba su correo" />
 
             <label for="mensaje" className="form-label">Mensaje:</label>
-            <textarea id="mensaje" type="text" class="form-textarea" placeholder="Aqui escriba su mensaje" />
+            <textarea id="mensaje" type="text" className="form-textarea" placeholder="Aqui escriba su mensaje" />
 
             {/* <input type="Submit" className="btn-submit" value="Enviar Consulta" /> */}
             <a className=" paddingbox  button btn-submit" href="mailto:name@rapidtables.com">Emviar correo</a>
