@@ -28,7 +28,7 @@ function Formolario() {
             <textarea id="mensaje" type="text" className="form-textarea" placeholder="Aqui escriba su mensaje" />
 
             {/* <input type="Submit" className="btn-submit" value="Enviar Consulta" /> */}
-            <a className=" paddingbox  button btn-submit" href="mailto:name@rapidtables.com">Emviar correo</a>
+            <a className=" paddingbox  button btn-submit" href="mailto:name@rapidtables.com">Enviar correo</a>
 
 
           </div>
