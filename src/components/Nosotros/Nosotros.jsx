@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from '../Navbar/Navbar';
 import '../Nosotros/Nosotros.css';
 
 function Nosotros() {

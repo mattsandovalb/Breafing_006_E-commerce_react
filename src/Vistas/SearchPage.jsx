@@ -2,7 +2,7 @@ import React from 'react'
 import ProductList from '../components/ProductList/ProductList'
 import { useParams } from 'react-router-dom';
 import Navbar from '../components/Navbar/Navbar'
-import CategorySideBar from '../components/CategoryList/CategorySideBar'
+import CategorySideBar from '../components/CategoryList/Buttons/CategorySideBar'
 
 function SearchPage() {
   const { id } = useParams();

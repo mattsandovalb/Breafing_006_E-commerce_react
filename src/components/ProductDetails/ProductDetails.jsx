@@ -1,7 +1,6 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import "./ProductDetails.css";
-// import img1 from "../../img/salmorejo.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
 

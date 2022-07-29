@@ -1,17 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './Scrollupbtn.css'
 
-import {
-  Link,
-  Button,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller,
-} from 'react-scroll'
-import Navbar from '../Navbar/Navbar'
-
 const ScrollToTop = () => {
   const [showTopBtn, setShowTopBtn] = useState(false)
   useEffect(() => {
@@ -24,12 +13,12 @@ const ScrollToTop = () => {
     })
   }, [])
 
-  let llevaMeArribeRapido = () => {
+  let goTop = () => {
     window.scrollTo(0, 0)
   }
   return (
     (showTopBtn && <div className="button-thing">
-      <button onClick={llevaMeArribeRapido}>
+      <button onClick={goTop}>
         <div className="arrow-container">
           <i id="arrow-up" className="fa-solid fa-arrow-up"></i>
         </div>

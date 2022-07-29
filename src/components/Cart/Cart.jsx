@@ -1,30 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import '../Cart/Cart.css'
 import { FaTrash } from 'react-icons/fa'
-// import Image from "../../images/mine.png";
-// import Image2 from "../../images/platano.png";
 import './Cart.css'
 import Navbar from '../Navbar/Navbar'
 import { Link } from 'react-router-dom'
 const Cart = () => {
   const [cart, setCart] = useState([
-    {
-      id: 1,
-      img: './images/milk.png',
-      title: 'Leche entera 1',
-      subtitle: 'Botella 1L',
-      price: '1,99€',
-      qty: 1,
-    },
-    {
-      id: 33,
-
-      img: './images/milk.png',
-      title: 'Leche fresca ',
-      subtitle: 'Botella 1L',
-      price: '1,99€',
-      qty: 1,
-    },
   ])
 
   useEffect(() => {
@@ -52,9 +33,9 @@ const Cart = () => {
       }
     }
     setCart(arr)
-    guardaMeLo()
+    saveData()
   }
-  const sumaMeLo = (id) => {
+  const plusBtn = (id) => {
     let arr = [...cart]
     for (let i = 0; i < arr.length; i++) {
       if (arr[i].id == id) {
@@ -66,9 +47,9 @@ const Cart = () => {
       }
     }
     setCart(arr)
-    guardaMeLo()
+    saveData()
   }
-  const borraMeLo = (id) => {
+  const deleteBtn = (id) => {
     let arr = [...cart]
     for (let i = 0; i < arr.length; i++) {
       if (arr[i].id == id) {
@@ -76,9 +57,9 @@ const Cart = () => {
       }
     }
     setCart(arr)
-    guardaMeLo()
+    saveData()
   }
-  const calculaMeElPrecio = (id) => {
+  const calculatePrice = (id) => {
     let arr = [...cart]
     for (let i = 0; i < arr.length; i++) {
       if (arr[i].id == id) {
@@ -87,26 +68,26 @@ const Cart = () => {
       }
     }
   }
-  const guardaMeLo = () => {
+  const saveData = () => {
     let carti = JSON.stringify(cart)
     localStorage.setItem('cart', carti)
   }
-  const limpiaMeLo = () => {
+  const cleanCart = () => {
     localStorage.setItem('cart', '[]')
     window.location.reload()
     return false
   }
 
-  const calcularTodo = () => {
+  const calculateAll = () => {
     let arr = [...cart]
     let counter = 0
     for (let i = 0; i < arr.length; i++) {
-      counter += parseFloat(calculaMeElPrecio(arr[i].id))
+      counter += parseFloat(calculatePrice(arr[i].id))
     }
     return counter.toFixed(2)
   }
 
-  const wasap = () => {
+  const whatsappFunction = () => {
     let arr = [...cart]
     let text = 'Productos:'
     let index = 1
@@ -114,10 +95,10 @@ const Cart = () => {
       if (arr[i].qty > 0) {
         text += `%0A *${index++}*. ${arr[i].title} x${
           arr[i].qty
-        } = ${calculaMeElPrecio(arr[i].id)}  `
+        } = ${calculatePrice(arr[i].id)}  `
       }
     }
-    let todo = calcularTodo()
+    let todo = calculateAll()
     text += `%0A Total: ${todo} `
     let number = '34662584188'
     let link = `https://wa.me/${number}?text=${text}`
@@ -133,7 +114,7 @@ const Cart = () => {
       <div>
         <input
           className="button btn-primary"
-          onClick={() => limpiaMeLo()}
+          onClick={() => cleanCart()}
           type="button"
           value=" Vaciar Carro "
         />
@@ -144,8 +125,8 @@ const Cart = () => {
         return (
           item.qty != 0 && (
             <div key={item.title} className="item">
-              <div class="card-m-4">
-                <div class="card-body">
+              <div className="card-m-4">
+                <div className="card-body">
                   <div className="row">
                     <div className="col-3">
                       <Link to="/ProductDetails">
@@ -167,16 +148,16 @@ const Cart = () => {
                           value={item.qty}
                           readOnly
                         ></input>
-                        <button onClick={() => sumaMeLo(item.id)}>+</button>
+                        <button onClick={() => plusBtn(item.id)}>+</button>
                       </div>
                     </div>
                     <div className="col-2 my-trashBox">
                       <FaTrash
                         className="trash-icon"
-                        onClick={() => borraMeLo(item.id)}
+                        onClick={() => deleteBtn(item.id)}
                       />
                       {/* <h3 className="euro">{item.price}</h3> */}
-                      <h3 className="euro">{calculaMeElPrecio(item.id)}</h3>
+                      <h3 className="euro">{calculatePrice(item.id)}</h3>
                     </div>
                   </div>
                 </div>
@@ -185,10 +166,10 @@ const Cart = () => {
           )
         )
       })}
-      <h1>Total: {calcularTodo()}</h1>
+      <h1>Total: {calculateAll()}</h1>
 
-      <button className="button btn-success" onClick={wasap}>
-        <i class="fa-brands fa-whatsapp"></i> Comprar por Whatssap
+      <button className="button btn-success" onClick={whatsappFunction}>
+        <i className="fa-brands fa-whatsapp"></i> Comprar por Whatssap
       </button>
       
       </div>

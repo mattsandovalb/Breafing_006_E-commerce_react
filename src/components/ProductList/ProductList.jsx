@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "./ProductList.css";
-import { Link } from "react-router-dom";
 
 function ProductList({query}) {
   const [productos, setProductos] = useState([]);
   useEffect(() => {
-    giveMeProductos();
+    giveMeProducts();
   }, []);
   let giveMeAccessKey = async () => {
     let res = await fetch("https://api.kroger.com/v1/connect/oauth2/token", {
@@ -19,7 +18,7 @@ function ProductList({query}) {
     return res.access_token;
   };
 
-  let giveMeProductos = async () => {
+  let giveMeProducts = async () => {
     let accessToken = await giveMeAccessKey();
 
     // let accessToken = "eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vYXBpLmtyb2…M4FMOeoadvGfDvZq1YY2YlDsBmgtBE3wR3c2eUro5xJlv3r8w";
@@ -77,7 +76,7 @@ function ProductList({query}) {
     localStorage.setItem("cart", cart);
   };
 
-  const hacerlo = (prod) => {
+  const storeData = (prod) => {
     let stringy = JSON.stringify(prod);
     localStorage.setItem("currentItem", stringy);
     window.open("/ProductDetails", "_self")
@@ -96,12 +95,12 @@ function ProductList({query}) {
               className="col-sm-6  col-md-4 col-lg-3d-flex justify-content-around "
               key={product.description}
             >
-              <div className="card producto d-flex align-items-center">
+              <div className="card product d-flex align-items-center">
                 {/* <img className='image' src={"./images/milk.png"}></img> */}
                 {/* <Link to="/ProductDetails"><img className="image" src={findSize(product.images)}></img></Link> */}
                 <img
                   className="image"
-                  onClick={() => hacerlo(product)}
+                  onClick={() => storeData(product)}
                   src={findSize(product.images)}
                 ></img>
 

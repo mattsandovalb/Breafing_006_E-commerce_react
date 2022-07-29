@@ -9,15 +9,15 @@ function Navbar({ search }) {
     setCcollapse(!collapse)
   }
 
-  let buscamelo = () => {
+  let findItem = () => {
     window.open('/SearchPage/' + query, '_self')
   }
   const onFormSubmit = (e) => {
     e.preventDefault()
-    buscamelo()
+    findItem()
   }
   return (
-    <div class="centered">
+    <div className="centered">
       <nav className="navbar navbar-expand-lg ">
         <div className="container-logo">
           <Link to="/">
@@ -30,7 +30,7 @@ function Navbar({ search }) {
             ></img>
           </Link>
         </div>
-        <form class="d-flex" role="search" onSubmit={onFormSubmit}>
+        <form className="d-flex" role="search" onSubmit={onFormSubmit}>
           <input
             class="form-control"
             type="search"
@@ -41,10 +41,10 @@ function Navbar({ search }) {
           ></input>
           <button
             type="button"
-            class="btn btn-outline-success"
-            onClick={buscamelo}
+            className="btn btn-outline-success"
+            onClick={findItem}
           >
-            <i class="fa-solid fa-search"></i>
+            <i className="fa-solid fa-search"></i>
           </button>
         </form>
         <div className="nav-item">
@@ -69,7 +69,7 @@ function Navbar({ search }) {
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon">
-            <i class="fa-solid fa-bars"></i>
+            <i className="fa-solid fa-bars"></i>
           </span>
         </button>
         <div

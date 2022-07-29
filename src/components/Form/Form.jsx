@@ -8,7 +8,7 @@ function Formolario() {
       <div>
         <Navbar />
       </div>
-      <div className="contenedor">
+      <div className="container">
         <form action="" className="form">
           <div className="">
             <div className="form-header">

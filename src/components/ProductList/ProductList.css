@@ -2,7 +2,7 @@
     row-gap: 44px;
 }
 
-.producto {
+.product {
     display: flex;
     max-width: 300px;
     padding: 20px;
@@ -11,17 +11,17 @@
     border: 0;
 }
 
-.producto img {
+.product img {
     width: 200px;
     height: auto;
     border-radius: 10px;
 }
 
-.producto .title {
+.product .title {
     font-weight: bold;
 }
 
-.producto .price {
+.product .price {
     font-size: x-large;
     font-weight: bold;
     color: #079F16;

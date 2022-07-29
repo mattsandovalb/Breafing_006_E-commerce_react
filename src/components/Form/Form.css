@@ -17,7 +17,7 @@
 input{
    text-align: left;
 }
- .contenedor .form .form-header .form-title {
+ .container .form .form-header .form-title {
     font-weight: normal;
     font-family: sans-serif;
     color: red;
@@ -26,10 +26,10 @@ input{
     font-family: Josefin Sans;
     
  }
- .contenedor .form .form-header .form-title span{
+ .container .form .form-header .form-title span{
     color: black;
  }
- .contenedor .form {
+ .container .form {
     background: rgba(black, black, black,.6);
     width: 90%;
     max-width: 650px;
@@ -40,7 +40,7 @@ input{
     border-radius: 3px;
  }
 
- .contenedor .form .form-label{
+ .container .form .form-label{
     display: block;
     color: black;
     font-size: 16px;
@@ -48,7 +48,7 @@ input{
     position: relative;
 
  }
- .contenedor .form .form-input, .form-textarea{
+ .container .form .form-input, .form-textarea{
     background: rgba(white,white,white,.7);
     border: none;
     outline: none;
@@ -66,12 +66,12 @@ input{
 
  }
 
- .contenedor .form .form-textarea{
+ .container .form .form-textarea{
     resize: vertical;
     max-height: 200px;
     min-height: 100px;
  }
- .contenedor .form .btn-submit{
+ .container .form .btn-submit{
     width: 100%;
     font-family: Roboto;
     outline: none;
@@ -86,7 +86,7 @@ input{
     font-family: Josefin Sans;
 
  }
- .contenedor .form .btn-submit:hover{
+ .container .form .btn-submit:hover{
     color: red ;
  }
  

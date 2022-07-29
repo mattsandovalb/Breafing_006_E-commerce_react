@@ -1,7 +1,6 @@
 import React from 'react'
-import CategoryButtons from './CategoryButtons';
-import CategoryImages from './CategoryImage';
-import { useState } from 'react';
+import CategoryButtons from '../CategoryList/Buttons/CategoryButtons';
+import CategoryImages from '../CategoryList/Buttons/CategoryImage';
 import './CategoryList.css';
 import Navbar from '../Navbar/Navbar';
 

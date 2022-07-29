@@ -1,8 +1,6 @@
 import React from "react";
 import "./CategoryImage.css";
 import { useState } from "react";
-import CategorySideBar from "./CategorySideBar";
-import ProductList from "../ProductList/ProductList";
 import { useEffect } from "react";
 function CategoryImages() {
   const [show, setShow] = useState(true)
@@ -15,7 +13,7 @@ function CategoryImages() {
     ]);
  
     useEffect(() => {
-        giveMeProductos()
+        giveMeProducts()
     }, []);
     let giveMeAccessKey = async () => {
         let res = await fetch('https://api.kroger.com/v1/connect/oauth2/token', {
@@ -36,7 +34,7 @@ function CategoryImages() {
         return res.access_token;
     }
 
-    async function giveMeProductos(text) {
+    async function giveMeProducts(text) {
         let accessToken = await giveMeAccessKey()
 
         // let accessToken = "eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vYXBpLmtyb2…M4FMOeoadvGfDvZq1YY2YlDsBmgtBE3wR3c2eUro5xJlv3r8w";
