@@ -24,22 +24,14 @@ function CategoryImages() {
             },
             body: "grant_type=client_credentials&scope=product.compact",
         })
-            .then(response => response.json())
-        // .then(data => {
-        //     console.log('Success:', data);
-        // })
-        // .catch((error) => {
-        //     console.error('Error:', error);
-        // });
+            .then(response => response.json()) 
         return res.access_token;
     }
 
     async function giveMeProducts(text) {
         let accessToken = await giveMeAccessKey()
 
-        // let accessToken = "eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vYXBpLmtyb2…M4FMOeoadvGfDvZq1YY2YlDsBmgtBE3wR3c2eUro5xJlv3r8w";
         let productsUrl = `${"https://api.kroger.com"}/v1/products?filter.term=${text}&filter.locationId=01400441`;
-        // let productsUrl = `${process.env.REACT_APP_API_BASE_URL}/v1/products?filter.term=${"milk"}`;
 
         let productsResponse = fetch(productsUrl, {
             method: "GET",

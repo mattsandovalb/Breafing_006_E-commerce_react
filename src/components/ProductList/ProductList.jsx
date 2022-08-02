@@ -47,10 +47,7 @@ function ProductList({query}) {
       .find((el) => el.perspective == "front")
       .sizes.find((el) => el.size == "large").url;
   };
-  // giveMeAccessKey()
-
-  // ?filter.term=milk&filter.locationId=70381054&filter.limit=6&filter.category=Diary
-
+  
   const addToCart = (product) => {
     let cart = localStorage.getItem("cart");
     if (cart == null) {
@@ -86,7 +83,7 @@ function ProductList({query}) {
     <div>
       <div className="row">
         {(productos.length<1 &&
-          <img src="https://media3.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="" />
+          <img className="w-75" src="https://media3.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="" />
         )}
 
         {productos.map((product) => {
