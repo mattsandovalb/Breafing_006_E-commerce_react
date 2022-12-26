@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function CategoryList() {
-  return (
-    <div>CategoryList</div>
-  )
+  return <div>CategoryList</div>;
 }
 
-export default CategoryList
+export default CategoryList;

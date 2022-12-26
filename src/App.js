@@ -1,6 +1,5 @@
 import './App.css';
 import Login from './components/Login';
-import StoreChatbot from './components/chatbot';
 import { useState } from 'react';
 
 function App() {
@@ -10,11 +9,11 @@ function App() {
   return (
     <div className="App">
       <Login />
-      {showChatBot &&
+      {/*showChatBot &&
         <div style={{ maxWidth: '300px' }} className='chatbot' >
           <StoreChatbot />
         </div>
-      }
+     */}
     </div>
 
   );
