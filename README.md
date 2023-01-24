@@ -73,6 +73,7 @@ No tienes que usar nunca `eject`. El conjunto de funciones seleccionadas es adec
 * [Bilal Bawar](https://github.com/BilalBawar)
 
 * [Jordi Gonzalez](https://github.com/JordiGDavant)
+* [Hudu Fodio] (https://github.com/Hudufodio)
 
 * [Ibai Garcia](https://github.com/IbaiGL)
 
