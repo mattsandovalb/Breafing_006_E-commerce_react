@@ -1,98 +1,127 @@
-.numberstyle{
-    width: 29px;
-    border: 0;
-    background: transparent;
+.button.btn-success {
+	/* Add your custom styles for the WhatsApp button here */
 }
-.item button{
-    width: 29px;
-    border-radius: 420px !important;
-    border: 0;
+.button.btn-success {
+	background: #25d366;
+	color: #fff;
+	font-weight: 700;
+	border-radius: 50px;
+	border: none;
+	padding: 16px 36px;
+	font-size: 1em;
+	box-shadow: 0 4px 16px rgba(44, 45, 65, 0.1);
+	cursor: pointer;
+	letter-spacing: 0.04em;
+	animation: pulse-wsp 1.6s infinite cubic-bezier(0.4, 2, 0.6, 1);
+	transition: background 0.2s, color 0.2s, transform 0.18s;
 }
- 
+.button.btn-success:hover {
+	background: #128c7e;
+	color: #fff;
+	transform: scale(1.08) translateY(-2px);
+	box-shadow: 0 8px 32px rgba(44, 45, 65, 0.18);
+}
+@keyframes pulse-wsp {
+	0% {
+		box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.4);
+	}
+	70% {
+		box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+	}
+	100% {
+		box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.4);
+	}
+}
+.numberstyle {
+	width: 29px;
+	border: 0;
+	background: transparent;
+}
+.item button {
+	width: 29px;
+	border-radius: 420px !important;
+	border: 0;
+}
+
 .item .btn-wsp {
-    position: absolute;
-    right: 20px;
-    width: 164px;
-    bottom: -70px;
-    border-radius: -0.75px;
-   /* margin-top: 30px;*/
-    height: 38px;
-    background: red;
-    border-radius: grey;
+	position: absolute;
+	right: 20px;
+	width: 164px;
+	bottom: -70px;
+	border-radius: -0.75px;
+	/* margin-top: 30px;*/
+	height: 38px;
+	background: red;
+	border-radius: grey;
 }
 
-.my-box{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+.my-box {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
 }
-.my-trashBox{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: space-around;
-    align-items: center;
-}
-.boxNumber{
-    
-    background-color: #e3e3e3;
-    border-radius: 9px;
-    padding: 6px;
-
-}
-
-.numberstyle{
-    width: 29px;
-    border: 0;
-    background: transparent;
-}
-
-.my-box{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-.my-trashBox{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: space-around;
-    align-items: center;
+.my-trashBox {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: space-around;
+	align-items: center;
 }
 .boxNumber {
-    
-    background-color: #e3e3e3;
-    border-radius: 9px;
-    padding: 6px;
+	background-color: #e3e3e3;
+	border-radius: 9px;
+	padding: 6px;
 }
-.img-product{
-    width:200px
+
+.numberstyle {
+	width: 29px;
+	border: 0;
+	background: transparent;
+}
+
+.my-box {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.my-trashBox {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: space-around;
+	align-items: center;
+}
+.boxNumber {
+	background-color: #e3e3e3;
+	border-radius: 9px;
+	padding: 6px;
+}
+.img-product {
+	width: 200px;
 }
 
 .Total-p {
-    position: absolute;
-    right: 260px;
-    bottom: -35px;
+	position: absolute;
+	right: 260px;
+	bottom: -35px;
 }
 
-
-@media screen and (max-width: 600px )  {
-    .card-m-4 {
-     display: flex;
-     flex-direction: column;
-     flex-wrap: wrap;
-     justify-items: center;
-}
-
+@media screen and (max-width: 600px) {
+	.card-m-4 {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-items: center;
+	}
 }
 
 @media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-   .img-product{
-   width:83px;
-}
+	/* For mobile phones: */
+	.img-product {
+		width: 83px;
+	}
 
-   /* img2{
+	/* img2{
     width: 83px;
    } */
 }

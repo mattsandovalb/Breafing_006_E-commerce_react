@@ -11,8 +11,14 @@ nav {
 }
 
 .navbar {
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #fff;
+    box-shadow: 0 2px 12px rgba(44,45,65,0.07);
+    transition: box-shadow 0.2s;
 }
 
 .navbar-toggler {

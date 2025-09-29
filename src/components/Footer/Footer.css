@@ -16,14 +16,42 @@ footer{
     text-align: center;
 }
 .footer-content{
+.icon-btn {
+    background: #079F16;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #fff;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    background-color: #6d839d;
+    box-shadow: 0 2px 8px rgba(44,45,65,0.10);
+    transition: background 0.2s, color 0.2s, transform 0.15s;
 }
-.footer-content h3{
+.icon-btn:hover {
+    background: #2C2D41;
+    color: #fff;
+    transform: scale(1.08);
+}
+.footer-bottom .icon-btn {
+    background: #079F16;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 24px;
+    padding: 8px 20px;
+    font-size: 1rem;
+    box-shadow: 0 2px 8px rgba(44,45,65,0.10);
+    margin: 0 4px;
+    transition: background 0.2s, color 0.2s, transform 0.15s;
+}
+.footer-bottom .icon-btn:hover {
+    background: #2C2D41;
+    color: #fff;
+    transform: scale(1.05);
+}
     font-size: 1.8rem;
     font-weight: 400;
     text-transform: capitalize;
@@ -69,13 +97,45 @@ footer{
     color: red !important;
 } 
 .footer-bottom{
-    background: rgb(9, 9, 71);
+    background: #181A2A;
     width: 100%;
-    height: 70px;
-    padding-top: 25px;
+    min-height: 70px;
+    padding: 28px 0 18px 0;
     display: flex;
     justify-content: space-evenly;
-    color: white;
+    align-items: center;
+    color: #fff;
+    box-shadow: 0 -2px 12px rgba(44,45,65,0.07);
+}
+.footer-bottom h6 {
+    margin: 0;
+    font-size: 1.08rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: #fff;
+    text-shadow: 0 1px 4px rgba(44,45,65,0.10);
+    background: linear-gradient(90deg, #079F16 0%, #2C2D41 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.footer-bottom .icon-btn {
+    margin-top: 4px;
+    font-size: 1.08rem;
+    font-weight: 700;
+    background: #fff;
+    color: #079F16;
+    border: 2px solid #079F16;
+    box-shadow: 0 2px 8px rgba(44,45,65,0.10);
+    padding: 8px 22px;
+    border-radius: 24px;
+    transition: background 0.2s, color 0.2s, border 0.2s, transform 0.15s;
+}
+.footer-bottom .icon-btn:hover {
+    background: #079F16;
+    color: #fff;
+    border: 2px solid #2C2D41;
+    transform: scale(1.07);
 }
 
 

@@ -1,173 +1,192 @@
 * {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 .container-text {
-    position: absolute;
-    top: 10%;
-    left: 30%;
-    transform: translate(0%, 0%);
-    font-family: Josefin sans;
-    color: #2C2D41;
+	position: absolute;
+	top: 10%;
+	left: 30%;
+	transform: translate(0%, 0%);
+	font-family: Josefin sans;
+	color: #2c2d41;
 }
 
 .slogan {
-    font-size: 1rem;
-    font-weight: 700;
+	font-size: 1rem;
+	font-weight: 700;
 }
 
 .claim {
-    font-size: 0.6rem;
-    font-weight:500 ;
+	font-size: 0.6rem;
+	font-weight: 500;
 }
 
 .btn-shop {
-    border-radius: 50px;
-    height: 25px;
-    width: 75px;
-    background-color: #8E99AD;
-    border: none;
-    box-shadow: 3px 3px rgba(0,0,0,0.4);
-    font-size: 0.6rem;
+	border-radius: 50px;
+	height: 25px;
+	width: 75px;
+	background-color: #079f16;
+	border: none;
+	box-shadow: 0 4px 16px rgba(44, 45, 65, 0.1);
+	font-size: 0.55em;
+	color: #fff;
+	font-weight: 500;
+	letter-spacing: 0.04em;
+	cursor: pointer;
+	animation: pulse 1.6s infinite cubic-bezier(0.4, 2, 0.6, 1);
+	transition: background 0.2s, color 0.2s, transform 0.18s;
+}
+.btn-shop:hover {
+	background: #2c2d41;
+	color: #fff;
+	transform: scale(1.08) translateY(-2px);
+	box-shadow: 0 8px 32px rgba(44, 45, 65, 0.18);
+}
+@keyframes pulse {
+	0% {
+		box-shadow: 0 0 0 0 rgba(7, 159, 22, 0.4);
+	}
+	70% {
+		box-shadow: 0 0 0 10px rgba(7, 159, 22, 0);
+	}
+	100% {
+		box-shadow: 0 0 0 0 rgba(7, 159, 22, 0.4);
+	}
 }
 
 /* XSmall devices (desktops, 375px and up)*/
-@media (min-width: 375px) { 
-    .container-text {
-        top: 10%;
-        left: 15%;
-    }
+@media (min-width: 375px) {
+	.container-text {
+		top: 10%;
+		left: 15%;
+	}
 
-    .slogan {
-        font-size: 1.4rem;
-        font-weight: 700;
-    }
-    
-    .claim {
-        font-size: 1rem;
-        font-weight:500 ;
-    }
+	.slogan {
+		font-size: 1.4rem;
+		font-weight: 700;
+	}
 
-    .btn-shop {
-        margin-bottom: 10px;
-        height: 30px;
-        width: 80px;
-        margin-bottom: 80px;
-    }
-}   
+	.claim {
+		font-size: 1rem;
+		font-weight: 500;
+	}
 
-/* Small devices (desktops, 425px and up)*/
-@media (min-width: 425px) { 
-    .container-text {
-        top: 10%;
-        left: 15%;
-    }
-
-    .slogan {
-        font-size: 1.6rem;
-        font-weight: 700;
-    }
-    
-    .claim {
-        font-size: 1.2rem;
-        font-weight:500 ;
-    }
-
-    .btn-shop {
-        margin-bottom: 50px;
-        height: 30px;
-        width: 80px;
-        margin-bottom: 80px;
-    }
-} 
-
-/* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) { 
-    .container-text {
-        top: 20%;
-        left: 20%;
-    }
-
-    .slogan {
-        font-size: 2.4rem;
-        font-weight: 700;
-    }
-
-    .claim {
-        font-size: 1.8rem;
-    }
-    .btn-shop {
-        height: 50px;
-        width: 100px;
-        font-size: 1rem;
-    }
-}   
-
-/* Large devices (desktops, 1024px and up)*/
-@media (min-width: 1024px) { 
-    .container-text {
-        top: 20%;
-        left: 20%;
-    }
-    
-    .slogan {
-        font-size: 3.2rem;
-    
-    }
-
-    .claim {
-        font-size: 2.8rem;
-    }
-
-    .btn-shop {
-        height: 60px;
-        width: 160px;
-        font-size: 1.6rem;
-    }
-} 
-
-/* XLarge devices (desktops, 1440px and up)*/
-@media (min-width: 1440px) { 
-    .container-text {
-        top: 25%;
-        left: 20%;
-    }
-    .slogan {
-        font-size: 3rem;
-        font-weight: 700;
-    }
-    .claim {
-        font-size: 2.4rem;
-    }
-    .btn-shop {
-        height: 60px;
-        width: 180px;
-        font-size: 2rem;
-        margin-top: 40px;
-    }
-} 
-
-/* XXLarge devices (desktops, 1680px and up)*/
-@media (min-width: 1680px) { 
-    .container-text {
-        top: 40%;
-        left: 20%;
-    }
-    .slogan {
-        font-size: 3rem;
-        font-weight: 700;
-    }
-    .claim {
-        font-size: 2.4rem;
-    }
-    .btn-shop {
-        height: 60px;
-        width: 180px;
-        font-size: 2rem;
-        margin-top: 40px;
-    }
+	.btn-shop {
+		margin-bottom: 10px;
+		height: 30px;
+		width: 80px;
+		margin-bottom: 80px;
+	}
 }
 
-  
-    
+/* Small devices (desktops, 425px and up)*/
+@media (min-width: 425px) {
+	.container-text {
+		top: 10%;
+		left: 15%;
+	}
+
+	.slogan {
+		font-size: 1.6rem;
+		font-weight: 700;
+	}
+
+	.claim {
+		font-size: 1.2rem;
+		font-weight: 500;
+	}
+
+	.btn-shop {
+		margin-bottom: 50px;
+		height: 30px;
+		width: 80px;
+		margin-bottom: 80px;
+	}
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+	.container-text {
+		top: 20%;
+		left: 20%;
+	}
+
+	.slogan {
+		font-size: 2.4rem;
+		font-weight: 700;
+	}
+
+	.claim {
+		font-size: 1.8rem;
+	}
+	.btn-shop {
+		height: 50px;
+		width: 100px;
+		font-size: 1rem;
+	}
+}
+
+/* Large devices (desktops, 1024px and up)*/
+@media (min-width: 1024px) {
+	.container-text {
+		top: 20%;
+		left: 20%;
+	}
+
+	.slogan {
+		font-size: 3.2rem;
+	}
+
+	.claim {
+		font-size: 2.8rem;
+	}
+
+	.btn-shop {
+		height: 60px;
+		width: 160px;
+		font-size: 1.6rem;
+	}
+}
+
+/* XLarge devices (desktops, 1440px and up)*/
+@media (min-width: 1440px) {
+	.container-text {
+		top: 25%;
+		left: 20%;
+	}
+	.slogan {
+		font-size: 3rem;
+		font-weight: 700;
+	}
+	.claim {
+		font-size: 2.4rem;
+	}
+	.btn-shop {
+		height: 60px;
+		width: 180px;
+		font-size: 2rem;
+		margin-top: 40px;
+	}
+}
+
+/* XXLarge devices (desktops, 1680px and up)*/
+@media (min-width: 1680px) {
+	.container-text {
+		top: 40%;
+		left: 20%;
+	}
+	.slogan {
+		font-size: 3rem;
+		font-weight: 700;
+	}
+	.claim {
+		font-size: 2.4rem;
+	}
+	.btn-shop {
+		height: 60px;
+		width: 180px;
+		font-size: 2rem;
+		margin-top: 40px;
+	}
+}

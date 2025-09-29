@@ -2,13 +2,9 @@
 
 ![](https://i.imgur.com/Z77Mn5A.png)
 
-
-
-Proyecto de Supermarket 
+Proyecto de Supermarket
 
 ## Instalacion 🚀
-
-
 
 _Realiza una copia del proyecto desde tu consola para poder llamar al proyect con el comando:_
 
@@ -55,32 +51,30 @@ En cambio, copiará todos los archivos de configuración y las dependencias tran
 
 No tienes que usar nunca `eject`. El conjunto de funciones seleccionadas es adecuado para implementaciones pequeñas y medianas, y no debe sentirse obligado a usar esta función. Sin embargo, entendemos que esta herramienta no sería útil si no pudiera personalizarla cuando esté listo para hacerlo.
 
-
 ## Autores ✒️
 
-* [Alejandra Morales](https://github.com/AleMCuitino)
+- [Alejandra Morales](https://github.com/AleMCuitino)
 
-* [Sukhchain Singh](https://github.com/vkygil)
+- [Sukhchain Singh](https://github.com/vkygil)
 
-* [Alessandro Arroyo](https://github.com/AlessHub)
+- [Alessandro Arroyo](https://github.com/AlessHub)
 
-* [Matt Sandoval](https://github.com/mattsandovalb)
+- [Matt Sandoval](https://github.com/mattsandovalb)
 
-* [Cristian Calderon](https://github.com/Gardeel)
+- [Cristian Calderon](https://github.com/Gardeel)
 
-* [Mamadou Kadame](https://github.com/deakamm)
+- [Mamadou Kadame](https://github.com/deakamm)
 
-* [Bilal Bawar](https://github.com/BilalBawar)
+- [Bilal Bawar](https://github.com/BilalBawar)
 
-* [Jordi Gonzalez](https://github.com/JordiGDavant)
-* [Hudu Fodio] (https://github.com/Hudufodio)
+- [Jordi Gonzalez](https://github.com/JordiGDavant)
+- [Hudu Fodio] (https://github.com/huduhamed)
 
-* [Ibai Garcia](https://github.com/IbaiGL)
+- [Ibai Garcia](https://github.com/IbaiGL)
 
 ## Herramientas o Tecnologias
 
 Lista de tecnologias utilizadas en este proyecto:
-* [Figma](https://www.figma.com/file/8x920LtMZEWFdegu805zuS/Mercado?node-id=0%3A1)
-* [Trello](https://trello.com/b/ZR0ibXJL/e-commerce-react)
 
-
+- [Figma](https://www.figma.com/file/8x920LtMZEWFdegu805zuS/Mercado?node-id=0%3A1)
+- [Trello](https://trello.com/b/ZR0ibXJL/e-commerce-react)
